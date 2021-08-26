@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  /* background-color: #fff; */
 }
 
 #title {
@@ -31,7 +32,7 @@ p {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 button {
@@ -67,11 +68,16 @@ button {
 .iphone-img {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
 }
 
 /* Features section */
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box {
@@ -131,14 +137,42 @@ button {
   padding: 3% 2%;
 }
 
-
 /* CTA and footer section */
-#cta{
-  background-color: #ef8172;
-  text-align: center;
+#cta {
+  background-color: #FF4C68;
   color: #fff;
-}
-#footer{
-  background-color: #ef8172;
+  padding: 7% 15%;
   text-align: center;
+}
+
+.cta-heading {
+  font-family: "Montserrat-Black", sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#footer {
+  font-size: 0.8rem;
+  text-align: center;
+
+}
+
+.social-icons{
+    margin: 20px 10px;
+}
+.social-icons:hover {
+  color: #FF4C68;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .iphone-img {
+    transform: rotate(0);
+    position: static;
+  }
 }
